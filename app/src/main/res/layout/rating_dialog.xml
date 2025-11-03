@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintCircleRadius="@dimen/_15sdp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:backgroundTint="@color/background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give Your Feedback"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize=".5"
+                android:numStars="5"
+                android:layout_marginTop="@dimen/_15sdp"
+                style = "?android:attr/ratingBarStyleIndicator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_textview"
+                android:text="Good"
+                android:textSize="@dimen/_12ssp"
+                android:padding="@dimen/_5sdp"
+                />
+
+            <EditText
+                android:id="@+id/ratingDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/comment_background"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="top|left"
+                android:hint="Please write comment here"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minLines="4"
+                android:textColor="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/_12ssp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_submit_btn"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Submit"
+                android:layout_gravity="end"
+                />
+
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

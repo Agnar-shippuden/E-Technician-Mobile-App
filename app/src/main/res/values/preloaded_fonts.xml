@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/allan</item>
+        <item>@font/amarante</item>
+        <item>@font/amita</item>
+        <item>@font/audiowide</item>
+        <item>@font/baumans</item>
+        <item>@font/buenard</item>
+        <item>@font/caudex_bold</item>
+    </array>
+</resources>

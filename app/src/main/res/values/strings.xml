@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">E Technician</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">Close Navigation drawer</string>
+    <string name="search">Search</string>
+    <string name="view_all">View all</string>
+    <string name="recommended">Recommended</string>
+    <string name="with_category">With Category</string>
+    <string name="complete_service_detail">Complete Service detail</string>
+    <string name="login_as_service_user">Login as User</string>
+    <string name="login_as_service_provider">Login as Technician</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="service_name">Service Name</string>
+    <string name="request">Request</string>
+    <string name="_9_00_am_to_5_00_pm">9:00 AM to 5:00 PM</string>
+    <string name="service_provider">Service Provider</string>
+    <string name="accept">Accept</string>
+    <string name="buyer_name">Buyer Name</string>
+    <string name="i_need_electrician">I need Electrician</string>
+    <string name="punjab">Punjab</string>
+    <string name="_1_00_00">1:00:00</string>
+    <string name="october_18_2021">October, 18 2021</string>
+
+    <string name="i_am_here">I am here</string>
+    <string name="provider_failed">Provider Failed</string>
+</resources>

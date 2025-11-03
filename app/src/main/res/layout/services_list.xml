@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@color/card_background"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/toolbar"
+           android:layout_marginStart="@dimen/_5sdp"
+           >
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="@dimen/_50sdp"
+               app:cardBackgroundColor="@color/dashboard_item_1"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/buyerImage"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_margin="@dimen/_8sdp"
+                   android:src="@drawable/ic_profile" />
+           </com.google.android.material.card.MaterialCardView>
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/_16sdp"
+               app:cardBackgroundColor="@color/card_background"
+               app:cardCornerRadius="@dimen/_14sdp"
+               app:cardElevation="0dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_9sdp"
+                   android:paddingStart="@dimen/_40sdp"
+                   android:paddingEnd="@dimen/_5sdp">
+
+                   <Button
+                       android:id="@+id/requestBtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/request"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_12ssp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/rs"-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="RS: "-->
+<!--                       android:textColor="@color/black"-->
+<!--                       android:textSize="@dimen/_14ssp"-->
+<!--                       app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                       app:layout_constraintEnd_toStartOf="@id/itemAmount"-->
+<!--                       app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/itemAmount"-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="2000"-->
+<!--                       android:textColor="@color/primary"-->
+<!--                       android:textSize="@dimen/_14ssp"-->
+<!--                       app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                       app:layout_constraintEnd_toEndOf="parent"-->
+<!--                       app:layout_constraintTop_toTopOf="parent" />-->
+
+
+                   <TextView
+                       android:id="@+id/serviceTitle"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="@dimen/_8sdp"
+                       android:text="@string/service_name"
+                       android:textColor="@color/primary_text"
+                       android:textSize="@dimen/_14ssp"
+                       android:fontFamily="@font/amarante"
+                       app:layout_constraintEnd_toStartOf="@id/requestBtn"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+<!--                   <androidx.appcompat.widget.AppCompatImageView-->
+<!--                       android:id="@+id/sellerLocation"-->
+<!--                       android:layout_width="@dimen/_12sdp"-->
+<!--                       android:layout_height="@dimen/_12sdp"-->
+<!--                       android:layout_marginTop="@dimen/_4sdp"-->
+<!--                       android:src="@drawable/ic_location"-->
+<!--                       app:layout_constraintStart_toStartOf="@id/serviceTitle"-->
+<!--                       app:layout_constraintTop_toBottomOf="@id/serviceTitle" />-->
+
+<!--                   <TextView-->
+<!--                       android:id="@+id/sellerAddress"-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="@string/punjab"-->
+<!--                       android:textColor="@color/secondary_text"-->
+<!--                       android:textSize="@dimen/_10ssp"-->
+<!--                       app:layout_constraintBottom_toBottomOf="@id/sellerLocation"-->
+<!--                       app:layout_constraintStart_toEndOf="@id/sellerLocation"-->
+<!--                       app:layout_constraintTop_toTopOf="@id/sellerLocation" />-->
+
+                   <TextView
+                       android:id="@+id/sellerTime"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       android:text="@string/_9_00_am_to_5_00_pm"
+                       android:textColor="@color/secondary_text"
+                       android:textSize="@dimen/_10ssp"
+                       app:layout_constraintStart_toStartOf="@id/serviceTitle"
+                       app:layout_constraintTop_toBottomOf="@id/serviceTitle"
+
+                       />
+
+                   <TextView
+                       android:id="@+id/hourlyCost"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       android:text="Hourly Cost"
+                       android:textColor="@color/secondary_text"
+                       android:textSize="@dimen/_12ssp"
+                       app:layout_constraintStart_toStartOf="@id/sellerTime"
+                       app:layout_constraintTop_toBottomOf="@id/sellerTime"
+
+                       />
+
+                   <TextView
+                       android:id="@+id/sellerHourlyCost"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       android:text="00 Rs"
+                       android:textColor="@color/secondary_text"
+                       android:textSize="@dimen/_11ssp"
+                       android:textStyle="bold"
+                       app:layout_constraintStart_toEndOf="@id/hourlyCost"
+                       app:layout_constraintBottom_toBottomOf="@id/hourlyCost"
+                       android:layout_marginStart="@dimen/_5sdp"
+                       />
+
+                   <TextView
+                       android:id="@+id/sellerName"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       android:text="@string/service_provider"
+                       android:textColor="@color/secondary_text"
+                       android:textSize="@dimen/_12ssp"
+                       android:fontFamily="@font/aclonica"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toStartOf="@id/hourlyCost"
+                       app:layout_constraintTop_toBottomOf="@id/hourlyCost"
+
+                       />
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </com.google.android.material.card.MaterialCardView>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>
